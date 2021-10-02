@@ -1,0 +1,75 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minecraft
+  labels:
+    app: minecraft
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: minecraft
+  template:
+    metadata:
+      labels:
+        app: minecraft
+    spec:
+      containers:
+      - name: minecraft
+        image: shigumams/mc-custom:0.0.7
+        tty: true
+        ports:
+        - containerPort: 25565
+        env:
+        - name: VERSION
+          value: "1.17.1"
+        - name: TYPE
+          value: "FABRIC"
+        - name: EULA
+          value: "TRUE"
+        - name: MEMORY
+          value: "1500M"
+        - name: MAX_PLAYERS
+          value: "10"
+        - name: TZ
+          value: "Asia/Tokyo"
+        - name: RESTORE
+          value: "FALSE"
+        - name: ICOS_APIKEY
+          valueFrom:
+            secretKeyRef:
+              name: mc-secret
+              key: ICOS_APIKEY
+        - name: ICOS_ENDPOINT
+          value: "s3.jp-tok.cloud-object-storage.appdomain.cloud"
+        - name: ICOS_BUCKET
+          value: "icos-mc-backup-animan"
+        resources:
+          limits:
+            memory: "1.9G"
+          requests:
+            memory: "1.9G"
+        volumeMounts:
+        - name: mc-pv
+          mountPath: /data
+      volumes:
+      - name: mc-pv
+        persistentVolumeClaim:
+          claimName: mc-pvc
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: minecraft-np
+spec:
+  type: NodePort
+  selector:
+    app: minecraft
+  ports:
+  - name: "minecraft-port"
+    protocol: TCP
+    port: 25565
+    targetPort: 25565
+    nodePort: 30065

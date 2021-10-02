@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  mc:
+    image: mc-custom
+    ports:
+      - "30065:25565"
+    environment:
+      VERSION: 1.17.1
+      EULA: "TRUE"
+      MEMORY: "1500M"
+      TYPE: FABRIC
+      RESTORE: "FALSE"
+      TZ: "Asia/Tokyo"
+      ICOS_APIKEY: "ここにICOSのAPIKEY"
+      ICOS_ENDPOINT: "ここにICOSのエンドポイント"
+      ICOS_BUCKET: "ここにICOSのバケット名"
+      MAX_PLAYERS: "10"
+    tty: true
+    stdin_open: true
+    restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 2G
