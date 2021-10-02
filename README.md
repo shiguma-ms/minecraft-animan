@@ -61,7 +61,7 @@ https://bbs.animanch.com/board/74203/
 - 必須MOD
     - Fabric API
         - Fablic用MODを使うための前提MOD
-        - https://media.forgecdn.net/files/3472/548/modmenu-2.0.13.jar
+        - https://media.forgecdn.net/files/3454/922/fabric-api-0.40.1%2B1.17.jar
 
 - あると便利MOD
     - ModMenu
