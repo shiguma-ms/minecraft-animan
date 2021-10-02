@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: minecraft
-        image: shigumams/mc-custom:0.0.7
+        image: mc-custom
         tty: true
         ports:
         - containerPort: 25565
