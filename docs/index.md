@@ -65,13 +65,13 @@ IBM Cloud k8s(無料枠)の制約上、約1カ月ごとにアドレスが変わ�
 
 |サーバーアドレス|
 |----|
-|169.57.43.1ぜろ:3006ご|
+|169.51.203.7きゅう:3006ご|
 
 ひらがなは数字に置き換えてください(念のための攻撃対策です)
 
 ### 次回の接続先サーバーアドレス更新予定
 
-2021/10/29
+2021/11/26
 
 
 ## 本スレ
@@ -96,7 +96,7 @@ IBM Cloud k8s(無料枠)の制約上、約1カ月ごとにアドレスが変わ�
 
 | MOD名      | 概要                           | DLリンク | 
 | :--------- | ------------------------------ | -------- | 
-| Fabric API | Fabric用MODを使うための前提MOD | [DL](https://media.forgecdn.net/files/3454/922/fabric-api-0.40.1%2B1.17.jar) | 
+| Fabric API | Fabric用MODを使うための前提MOD | [DL](https://media.forgecdn.net/files/3494/349/fabric-api-0.41.0%2B1.17.jar) | 
 
 ### あると便利MOD
 
@@ -107,7 +107,7 @@ IBM Cloud k8s(無料枠)の制約上、約1カ月ごとにアドレスが変わ�
 | Sodium                  | マイクラの描画処理を劇的に改善する。リンク先の～.jarをDL                                                   | [DL](https://github.com/CaffeineMC/sodium-fabric/releases/tag/mc1.17.1-0.3.2)   | 
 | Inventory Profiles Next | インベントリに整列(ソート)ボタンなどを追加する                                       | [DL](https://media.forgecdn.net/files/3477/726/InventoryProfilesNext-fabric-1.17-1.0.3.jar)   | 
 | VoxelMap                | 画面上に周囲マップを描画する                                                         | [DL](https://media.forgecdn.net/files/3345/206/fabricmod_VoxelMap-1.10.15_for_1.17.0.jar)   | 
-| Diggus Maximus          | 原木や鉱石などを一括で破壊できるようになる。初期状態だと何でも一括破壊するので[要設定](#diggus-maximus一括破壊mod設定) | [DL](https://media.forgecdn.net/files/3475/174/diggusmaximus-1.5.0-1.17.jar)   | 
+| Diggus Maximus          | 原木や鉱石などを一括で破壊できるようになる。初期状態だと何でも一括破壊するので[要設定](#diggus-maximus一括破壊mod設定) | [DL](https://media.forgecdn.net/files/3487/588/diggusmaximus-1.5.1-1.17.jar)   | 
 
 
 ### その他のMod
